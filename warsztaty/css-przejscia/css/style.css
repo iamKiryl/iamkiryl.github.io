@@ -1,0 +1,29 @@
+.box {
+    width:150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-width {
+    background-color: red;
+    transition: width 2s;
+}
+.box-width:hover {
+    width:300px;
+}
+.box-height {
+    background-color: aqua;
+    transition: height 2s;
+}
+.box-height:hover {
+    height: 300px;
+}
+.box-wh {
+    background-color: blueviolet;
+    transition: 2s;
+}
+.box-wh:hover {
+    height: 300px;
+    width: 300px;
+}
