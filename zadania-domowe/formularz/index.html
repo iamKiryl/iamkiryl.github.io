@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="https://formspree.io/iamkirylm@gmail.com" method="POST">
+       <h2>Formularz :</h2>
+        <input type="text" name="firstname" placeholder="Imię"><br/><br/>
+        <input type="text" name="lastname" placeholder="Nazwisko"><br/><br/>
+        <input name="email" type="email" placeholder="email@gmail.com"><br/><br/>
+        <p><b>Wybierz płeć:</b></p>
+        <label for="male">Mężczyzna</label><input type="radio" name="gender" id="male"><br/>
+        <label for="female">Kobieta</label><input type="radio" name="gender" id="female"><br/><br/>
+        
+        <br>
+        <label for="city">Wybierz miasto:</label>
+        <select name="city" id="city">
+        <option value="krakow">Kraków</option>
+        <option value="warszawa" >Warszawa</option>
+        <option value="gdansk">Gdańsk</option>
+        </select>
+        <br/><br/>
+        <textarea name="massage" rows="5" cols="33" placeholder="Wiadomość"></textarea><br/>
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        <br><br/>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
