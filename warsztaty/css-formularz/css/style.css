@@ -10,6 +10,7 @@ form input[type="email"],
 form select,
 form textarea {
     background-color: #2b4a64;
+    float: auto;
 }
 form select:focus, form textarea:focus, form input:focus {
     background-color:#4e708c; 
