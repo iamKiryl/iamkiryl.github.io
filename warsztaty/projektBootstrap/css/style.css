@@ -1,9 +1,72 @@
-#sd1 {
-    background-image: url('');
+#section1 {
+    background-image: url('https://images.pexels.com/photos/2404007/pexels-photo-2404007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: top;
+	background-size: cover;
 }
-form  {
-    display: block;
+
+input.btn, a.btn {
+	background-color: #e38f42;
+	color: #fff;
+
 }
-.navbar .navbar-rigth {
-	justify-content: flex-end;
+
+h1, a.navbar-brand, p {
+	color: #fff;
+}
+
+
+.navbar {
+	background-color: #444;
+}
+
+
+#form1 {
+    margin: 10px;
+}
+#divdiv1 {
+justify-content: flex-end;
+}
+#section1 form {
+	background-color:   rgba(0,0,0,0.35);
+	color: #fff;
+}
+#section1 form header {
+	background-color:   rgba(0,0,0,0.35);
+	margin: 0;
+	padding: 25px;
+}
+
+
+#section1 form header i {
+	opacity: 0.6;
+	font-size: 3.3em;
+}
+
+
+#section1 form input,
+#section1 form textarea
+{
+	width: 100%;
+	padding: 10px 15px;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+
+div.text-center {
+	align-items: center;
+}
+
+
+
+
+
+
+
+#footer {
+	background-color: : #f8f8f8
+}
+
+p.cl1{
+	color: #888 ;
 }

@@ -13,15 +13,15 @@
 </head>
 <body>
 <!--Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
  <div class="container">
   <a class="navbar-brand" href="#">Klub podróżniczy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse navbar-right" id="divdiv1">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active " href="#">Dołącz do nas</a>
+      <a class="nav-item nav-link" href="#">Dołącz do nas</a>
       <a class="nav-item nav-link" href="#">Inspekcje</a>
     </div>
      </div>
@@ -38,7 +38,7 @@
         <div class="container">
         <div class="row">
              <div class='col-12 col-md-6 col-lg-5'>
-                 <form>
+                 <form id="form1">
                    <!--header-->
                     <header class="row">
                        <div class="col-10 col-md-9 col-xl-10">
@@ -49,7 +49,8 @@
                            <i class="fas fa-pencil-alt"></i>
                         </div>
                     </header>
-                    <!--header end--> 
+                    <!--header end-->
+                    <fieldset> 
                     <input type="text" placeholder="Imię i nazwisko">
                     <input type="email" placeholder="Email">
                     <input type="tel" placeholder="Telefon">
@@ -58,15 +59,14 @@
                     <input type="submit" class="btn btn-primary btn-orange btn-block" value="Zapisz sie">
                     
                     <p class="text-center">Wypełniając zgloszenie wyrażasz zgodę na przetwarzanie danych zgodnie z <a href="#">politiką prywatniści</a></p>
-                    
-                    
+					 </fieldset>
                  </form>
              </div>
              <div class="col-12 col-md-6 col-lg-7 text-center">
                          <h1>Świat jest na wyciągnięcia ręki</h1>
                          <p>Poznaj ludzi, których łączy wspólna pasja podróżowania. Przekonaj się, jak wyglada życie bez granic</p>
-				 <a class='btn btn-primary btn-orange'>Znajdz nas <i class="fas fa-angle-right"></i></a>
-				 <a type="submit" class='btn'>Dowiedz się więcej <i class="far fa-lightbulb"></i></a>
+				 <a href="#" class='btn btn-primary btn-orange'>Znajdz nas <i class="fas fa-angle-right"></i></a>
+				 <a href="#" class='btn'>Dowiedz się więcej <i class="far fa-lightbulb"></i></a>
              </div>
              </div>              
         </div>
@@ -77,26 +77,28 @@
    	<div class="container">
    	<div class='row'>
    		<div class="col-12 col-md-6 col-lg-5">
-   			
+   			<video>
+   				<source src="https://www.youtube.com/watch?v=VAXg78MKJcM" type="video/mp4">
+   			</video>
    		</div>
    		<div class="col-12 col-md-6 col-lg-7">
    			<H2>Inprisujemy</H2>
-   			<p>Poznaj historie ludzi, którzy zrealizowali swoje marzenia</p>
-   			<p>Podróżownie pozwala poznać Świat i odkryć siebie. Spełniaj swoje marzenia i zdobywaj nowe pasje. Daj się ponieść przygodzie i dołącz do grona pasjonatów którzy codziennie udowadniają, że nie ma rzeczy niemożliwych.</p>
+   			<p class="cl1">Poznaj historie ludzi, którzy zrealizowali swoje marzenia</p>
+   			<p class="cl1">Podróżownie pozwala poznać Świat i odkryć siebie. Spełniaj swoje marzenia i zdobywaj nowe pasje. Daj się ponieść przygodzie i dołącz do grona pasjonatów którzy codziennie udowadniają, że nie ma rzeczy niemożliwych.</p>
    			<a href="#">Więcej historii</a>
    		</div>
    	</div>	
    	</div>
    </section>
    
+   <!--             FOOTER                 -->
    
-   
-   <footer>
+   <footer id="footer">
    	<div class="container">
    		<div class="row">
    			<div class="col-6 col-md-6 col-lg-6">
    			<h4>O nas</h4>
-   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum necessitatibus maiores delectus, aliquam cum. Eligendi error, est pariatur amet.</p>	
+   			<p class="cl1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum necessitatibus maiores delectus, aliquam cum. Eligendi error, est pariatur amet.</p>	
    			</div>
    			<div class="col-6 col-md-6 col-lg-6">
    			<h4>Kontakt</h4>
