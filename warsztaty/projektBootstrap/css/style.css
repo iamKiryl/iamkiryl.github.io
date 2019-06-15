@@ -1,0 +1,9 @@
+#sd1 {
+    background-image: url('');
+}
+form  {
+    display: block;
+}
+.navbar .navbar-rigth {
+	justify-content: flex-end;
+}
