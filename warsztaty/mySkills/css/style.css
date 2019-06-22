@@ -1,0 +1,28 @@
+*{
+	background-color:#FAFAD2;
+}
+body{
+	background-color:#FAFAD2;
+}
+header{
+	color:grey;
+	font-size:1.5em;
+	
+}
+header span {
+	font-size: 0.3em;
+	color:grey;
+
+}
+#icons{
+	font-size: 3em;
+}
+p{
+	font-size:0.4em;
+}
+
+
+
+i{
+color:orange;	
+}
