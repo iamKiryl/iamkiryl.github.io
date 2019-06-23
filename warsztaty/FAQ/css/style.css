@@ -1,0 +1,19 @@
+h2 {
+	color: darkgrey;
+}
+h5{
+	text-align: center;
+	
+}
+span{
+	color: indianred;
+	text-decoration: none;			
+}
+span:hover{
+	color:cadetblue;
+	border-bottom: 1px solid;
+}
+div.card-body{
+	text-align: justify;
+	color:grey;
+}
