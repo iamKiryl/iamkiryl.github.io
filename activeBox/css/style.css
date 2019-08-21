@@ -48,6 +48,21 @@ p{
 }
 
 
+.header.fixed {
+	height: auto;
+	
+	position: fixed;
+	
+	background-color: #31344e;
+}
+.header.fixed .header__inner {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	border-bottom: 0;
+}
+
+
 /*NAV***************************************/
 .nav {
 	display: flex;
@@ -380,9 +395,21 @@ p{
 }
 
 
+
+.reviews__slider{
+	height: 500px;
+	overflow: hidden;
+}
+
+.reviews__slider.slick-initialized{
+	height: auto;
+}
+
+
 .reviews__item {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden;
 	
 }
 
@@ -425,7 +452,55 @@ p{
 	color:#fff;
 }
 
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0 0 10px;
+	width: 50%;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	
+	list-style: none;
+	
+	
+}
 
+
+.slick-dots li {
+	margin: 0 5px;
+}
+
+
+
+.slick-dots button {
+	width: 15px;
+	height: 15px;
+	
+	background: #fff;
+	border-radius: 50%;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	font-size: 0;
+	color:transparent;
+	opacity: 0.5;
+	
+}
+
+.slick-dots button:focus {
+	outline: 0;
+}
+
+
+
+
+.slick-dots .slick-active button {
+	opacity: 1;
+}
 
 
 /*Download**********************************/
@@ -546,8 +621,28 @@ p{
 	
 	
 .nav {
+	width: 100%;
+	text-align: right;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	flex-direction: column;
+	
+	background-color: #31344e;
+
 	display: none;
+
 }
+	
+	.nav.show {
+		display: flex;
+	}
+	
+	
+	
+	.nav__link {
+		padding: 9px 15px ;
+	}
 	
 	
 	/*Intro*/	

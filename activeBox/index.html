@@ -5,7 +5,11 @@
 	<meta name='viewport' content="width=device-width, inicial-scale=1">
 	<title>ActiveBox</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </head>
 <body>
 <!--Sprite_____-->
@@ -48,27 +52,27 @@
 
 
 <!--HEADER ____________________________________-->
-	<header class='header'>
+	<header class='header' id='header'>
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__logo">
 					<img src="img/activebox-logo.png" alt="logo">
 				</div>
-				<nav class="nav">
-					<a href="#" class="nav__link">FATURES</a>
-					<a href="#" class="nav__link">WORKS</a>
-					<a href="#" class="nav__link">OUR TEAM</a>
-					<a href="#" class="nav__link">TESTIMONIALS</a>
-					<a href="#" class="nav__link">DOWNLOAD</a>
+				<nav class="nav" id='nav'>
+					<a href="#" class="nav__link" data-scroll='#features'>FATURES</a>
+					<a href="#" class="nav__link" data-scroll='#works'>WORKS</a>
+					<a href="#" class="nav__link" data-scroll='#team'>OUR TEAM</a>
+					<a href="#" class="nav__link" data-scroll='#reviews'>TESTIMONIALS</a>
+					<a href="#" class="nav__link" data-scroll='#download'>DOWNLOAD</a>
 				</nav>
-				<button class="burger">
+				<button class="burger" type="button" id='navToggle'>
 					<span class='burger__item'>Menu</span>
 				</button>
 			</div>
 		</div>
 	</header>
 	<!--INTRO________________________________________-->
-	<div class="intro">
+	<div class="intro" id='intro'>
 		<div class="container">
 			<div class="intro__inner">
 				<h1 class='intro__title'>Your Favorite One Page Multi Purpose Templat</h1>
@@ -80,7 +84,7 @@
 	
 	<!--Features   -->
 
-	<div class="container">
+	<div class="container" id='features'>
 		<div class="features">
 			<div class="features__item">
 				<img class='features__icon' src="img/features/feature-1.png" alt="">
@@ -117,7 +121,7 @@
 
 <!-- Works__________________________________-->
 
-<div class="works">
+<div class="works" id='works'>
 	<div class="works__item">
 		<img class="works__photo" src="img/works/work-1.jpg" alt="">
 		<div class="works__content">
@@ -211,7 +215,7 @@
 <!--Team -->
 
 
-<div class="team">
+<div class="team" id='team'>
 	<div class="container">
 		<div class="team__inner">
 		
@@ -348,18 +352,36 @@
 <!--TESTIMONIALS__________________________________________________________________-->
 
 
-<div class="reviews">
+<div class="reviews" id='reviews'>
 	<div class="container">
-	
-		<div class="reviews__item">
-			<div class="reviews__photo">
-				<img class='reviews__img' src="img/reviews/review-1.jpg" alt="">
+		
+		
+		<div class='reviews__slider' id="reviewsSlider">
+		
+			<div class='slick-item'>
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img class='reviews__img' src="img/reviews/review-1.jpg" alt="">
+					</div>
+					<div class="reviews__content">
+						<div class="reviews__text">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</div>
+						<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
 			</div>
-			<div class="reviews__content">
-				<div class="reviews__text">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</div>
-				<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+			<div class='slick-item'>	
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img class='reviews__img' src="img/reviews/review-1.jpg" alt="">
+					</div>
+					<div class="reviews__content">
+						<div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fuga, animi eos in porro iure inventore voluptatum enim et vitae. Voluptas eveniet porro facere, illo iure aperiam, debitis quasi expedita."</div>
+						<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+					</div>
+				</div>
 			</div>
-		</div>
+			
+		</div><!--./reviewsSlider-->
 		
 	</div><!--./container-->
 </div><!--./reviews-->
@@ -367,7 +389,7 @@
 <!--Download________________________________________-->
 
 
-<div class="download">
+<div class="download" id='download'>
 	<div class="container">
 		<h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
 		<div class="download__text">
@@ -451,12 +473,10 @@
 
 
 
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-
-
-
-
-
+<script src="jscript/app.js"></script>
 
 
 
