@@ -157,7 +157,16 @@ body{
 }
 
 
+.btn__add-to-do{
+	position: relative;
+	border: 0;
+}
 
+.btn__add-to-do i{
+	position: absolute;
+	left: 0px;
+	top: -15px;
+}
 
 
 

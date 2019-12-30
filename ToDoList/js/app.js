@@ -5,7 +5,7 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById('list');
 const input = document.getElementById('input');
-
+const btn__add = document.getElementById('fa-plus-circle');
 //Classes names
 const CHECK = 'fa-check-circle';
 const UNCHECK = 'fa-circle-thin';
@@ -66,7 +66,12 @@ function addToDo(toDo, id, done, trash){
 	list.insertAdjacentHTML(position, item);
 }
 // add an item to the list user the enter key 
-document.addEventListener('keyup', function(event){
+
+
+
+
+
+document.addEventListener('keyup', function (event){
 	if(event.keyCode == 13){
 		const toDo = input.value;
 		// if input isn't empty
@@ -88,6 +93,26 @@ document.addEventListener('keyup', function(event){
 	}
 });
 
+//add an item to the list when user click the btn
+
+btn__add.addEventListener("click", function(event){
+		const toDo = input.value;
+		// if input isn't empty
+		if(toDo){
+			addToDo(toDo, id, false, false);
+			
+			LIST.push({
+				name: toDo,
+				id: id,
+				done:false,
+				trash: false
+			});
+			//add item to localstorage(this code must be added where the LIST array is updated)
+			localStorage.setItem('TODO', JSON.stringify(LIST));
+			id++;
+		}
+		input.value = '';
+});
 
 
 
