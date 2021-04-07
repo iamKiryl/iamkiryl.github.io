@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #snakeboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #score {
+    text-align: center;
+    font-size: 140px;
+  }
+  
+  #bestScoreBox{
+    /* margin-top: 420px; */
+    text-align: center;
+    font-size: 30px;
+  }
