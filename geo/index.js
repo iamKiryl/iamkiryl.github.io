@@ -69,8 +69,8 @@ const newsItem = (newsSelector, newsLink, newsTitle, author, publication, newsIm
           info.innerText = `${author} - ${publication}`;
 
           selector.append(a);
-          a.append(content);
           a.append(wrapper);
+          a.append(content);
           content.append(title);
           content.append(info);
           wrapper.append(img)
