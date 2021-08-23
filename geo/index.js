@@ -4,7 +4,13 @@ const headerMenuBtn = document.querySelector('.header-menu_btn'),
 headerMenuBtn.addEventListener('click', (e) => {
     e.preventDefault();
     headerModal.classList.toggle('active');
-})
+});
+
+document.body.addEventListener('click', (e) => {
+    if (e.target != headerModal && e.target != headerMenuBtn && headerModal.classList.contains('active')){
+        headerModal.classList.toggle('active');
+    }
+});
 
 const menuItems = (modalSelector, imgSrc, titleText) => {
     const modal = document.querySelector(modalSelector),
@@ -69,11 +75,25 @@ const newsItem = (newsSelector, newsLink, newsTitle, author, publication, newsIm
           info.innerText = `${author} - ${publication}`;
 
           selector.append(a);
-          a.append(content);
           a.append(wrapper);
+          a.append(content);
           content.append(title);
           content.append(info);
           wrapper.append(img)
+}
+
+const advertising = ( advertisingSelector, link, imageLink, title = 'advertising') => {
+    const selector = document.querySelector(advertisingSelector),
+          a = document.createElement('a'),
+          img = document.createElement('img');
+
+          a.classList.add('advertising-item');
+          a.href = link;
+          img.src = imageLink;
+          img.alt = title;
+
+          selector.append(a);
+          a.append(img);
 }
 
 menuItems('.header-modal-menu','./avatar.svg', 'Account');
@@ -98,3 +118,7 @@ newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlam
 newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
 newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
 newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
+
+advertising('.advertising', '#', './image6.jpg');
+advertising('.advertising', '#', './image6.jpg');
+advertising('.advertising', '#', './image6.jpg');
