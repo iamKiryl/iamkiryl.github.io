@@ -164,7 +164,7 @@
 }
 
 .nav-links_link {
-    max-width: 300px;
+    max-width: 260px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -199,6 +199,7 @@
 
 .nav-links_link-title {
     text-align: center;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.8);
 
 }
