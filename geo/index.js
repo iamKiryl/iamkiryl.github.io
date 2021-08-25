@@ -1,14 +1,25 @@
 const headerMenuBtn = document.querySelector('.header-menu_btn'),
-     headerModal = document.querySelector('.header-modal-menu');
+     headerModal = document.querySelector('.header-modal-menu'),
+     headerAccountBtn = document.querySelector('.header-menu_account-img'),
+     headerModalAccount = document.querySelector('.header-modal-account');
 
 headerMenuBtn.addEventListener('click', (e) => {
     e.preventDefault();
     headerModal.classList.toggle('active');
 });
 
+headerAccountBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    headerModalAccount.classList.toggle('active');
+})
+
 document.body.addEventListener('click', (e) => {
     if (e.target != headerModal && e.target != headerMenuBtn && headerModal.classList.contains('active')){
         headerModal.classList.toggle('active');
+    }
+
+    if (e.target != headerModalAccount && e.target != headerAccountBtn && headerModalAccount.classList.contains('active')){
+        headerModalAccount.classList.toggle('active');
     }
 });
 
@@ -96,6 +107,9 @@ const advertising = ( advertisingSelector, link, imageLink, title = 'advertising
           a.append(img);
 }
 
+menuItems('.header-modal-menu','./avatar.svg', 'Account');
+menuItems('.header-modal-menu','./avatar.svg', 'Account');
+menuItems('.header-modal-menu','./avatar.svg', 'Account');
 menuItems('.header-modal-menu','./avatar.svg', 'Account');
 menuItems('.header-modal-menu','./avatar.svg', 'Account');
 menuItems('.header-modal-menu','./avatar.svg', 'Account');

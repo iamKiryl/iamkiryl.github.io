@@ -41,12 +41,29 @@
     justify-content: flex-end;
 }
 
+.header-search-btn {
+    max-width: 40px;
+    width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search-btn svg {
+    width: 25px;
+    color: rgba(0, 0, 0, 0.6)
+}
+
 .header-search_input {
     width: 100%;
     max-width: 200px;
     padding: 6px 16px;
     border: 1px solid grey;
-    border-radius: 7px;
+    border-radius: 7px 0px 0px 7px;
     text-align: center;
 }
 
@@ -97,8 +114,75 @@
     overflow: hidden;
 }
 
+.account-img-wrapper {
+    pointer-events: none;
+}
+
 .header-modal-menu {
     display: none;
+}
+
+.header-modal-account {
+    display: none;
+}
+
+
+.header-modal-account.active {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 1px 3px 2px grey;
+    top: 65px;
+    right: 10px;
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-modal-account_image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    pointer-events: none;
+}
+
+.header-modal-account-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header-modal-account-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.header-modal-account-btn+.header-modal-account-btn {
+    margin-top: 7px;
+}
+
+.header-modal-account_image-wrapper {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.header-modal-account_image-wrapper img {
+    width: 100%;
 }
 
 .header-modal-menu.active {
@@ -115,6 +199,7 @@
     width: 300px;
     height: 230px;
     overflow: hidden;
+    overflow-y: scroll;
     padding: 20px 20px 0;
 }
 
@@ -299,6 +384,28 @@
 
 .news-content-info {
     font-size: 14px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: lightgray;
+}
+
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list_item-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.footer-list_item+.footer-list_item {
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 1180px) {
