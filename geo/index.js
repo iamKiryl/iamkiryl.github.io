@@ -1,20 +1,76 @@
 const headerMenuBtn = document.querySelector('.header-menu_btn'),
      headerModal = document.querySelector('.header-modal-menu'),
      headerAccountBtn = document.querySelector('.header-menu_account-img'),
-     headerModalAccount = document.querySelector('.header-modal-account');
+     headerModalAccount = document.querySelector('.header-modal-account'),
+     logoutBtn = document.querySelector('.header-modal-account-btn-logout'),
+     logInDiv = document.querySelector('.header-menu_account-login'),
+     logInPage = document.querySelector('.modal-login-page'),
+     loginPageBtn = document.querySelector('.login-btn'),
+     loginPageEmail = document.querySelector('#email'),
+     loginPagePassword = document.querySelector('#password'),
+     background = document.querySelector('.background')
+     loginPageCloseBtn = document.querySelector('.modal-ligin-page_form-exit');
 
 headerMenuBtn.addEventListener('click', (e) => {
     e.preventDefault();
     headerModal.classList.toggle('active');
 });
 
+background.addEventListener('click', (e) => {
+    e.preventDefault();
+    logInPage.classList.add('nodisplay');
+    background.classList.add('nodisplay');
+    document.body.style.overflow = ''
+});
+
+loginPageCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    logInPage.classList.add('nodisplay');
+    background.classList.add('nodisplay');
+    document.body.style.overflow = ''
+})
+
 headerAccountBtn.addEventListener('click', (e) => {
     e.preventDefault();
     headerModalAccount.classList.toggle('active');
 })
 
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    logInDiv.classList.remove('nodisplay');
+    headerAccountBtn.classList.add('nodisplay');
+    headerMenuBtn.classList.add('nodisplay');
+})
+
+logInDiv.addEventListener('click', (e) => {
+    e.preventDefault();
+    logInPage.classList.remove('nodisplay');
+    background.classList.remove('nodisplay');
+    document.body.style.overflow = 'hidden';
+})
+
+document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && !logInPage.classList.contains('show')) { 
+            logInPage.classList.add('nodisplay');
+            background.classList.add('nodisplay');
+            document.body.style.overflow = ''
+        }
+});
+
+loginPageBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(loginPageEmail.value != '' && loginPagePassword.value != '') {
+        logInPage.classList.add('nodisplay');
+        logInDiv.classList.add('nodisplay');
+        headerAccountBtn.classList.remove('nodisplay');
+        headerMenuBtn.classList.remove('nodisplay');
+        background.classList.add('nodisplay');
+        document.body.style.overflow = ''
+    }
+});
+
 document.body.addEventListener('click', (e) => {
-    if (e.target != headerModal && e.target != headerMenuBtn && headerModal.classList.contains('active')){
+    if (e.target != headerModal  && e.target != headerMenuBtn && headerModal.classList.contains('active')){
         headerModal.classList.toggle('active');
     }
 
@@ -22,6 +78,11 @@ document.body.addEventListener('click', (e) => {
         headerModalAccount.classList.toggle('active');
     }
 });
+
+//loginPageBtn = document.querySelector('.login-btn'),
+    // loginPageEmail = document.querySelector('#email'),
+     //loginPagePassword = document.querySelector('#password'),
+    /// loginPageCloseBtn
 
 const menuItems = (modalSelector, imgSrc, titleText) => {
     const modal = document.querySelector(modalSelector),
