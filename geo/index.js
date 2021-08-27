@@ -197,3 +197,4 @@ newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlam
 advertising('.advertising', '#', './image6.jpg');
 advertising('.advertising', '#', './image6.jpg');
 advertising('.advertising', '#', './image6.jpg');
+advertising('.advertising', '#', './image6.jpg');
