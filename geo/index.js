@@ -79,6 +79,9 @@ document.body.addEventListener('click', (e) => {
     }
 });
 
+loginPageEmail.placeholder = 'Имя / email';
+loginPagePassword.placeholder = 'Пароль';
+
 //loginPageBtn = document.querySelector('.login-btn'),
     // loginPageEmail = document.querySelector('#email'),
      //loginPagePassword = document.querySelector('#password'),

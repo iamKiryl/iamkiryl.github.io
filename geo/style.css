@@ -453,7 +453,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 2px solid rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(4, 32, 110, 0.664);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -465,7 +465,7 @@
     width: 100%;
     width: 20px;
     height: 20px;
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(4, 32, 110, 0.664);
 }
 
 .modal-login-page-title {
@@ -476,21 +476,46 @@
 
 .modal-login-page_form label {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
 }
 
 .modal-login-page_form-input {
-    margin-left: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 6px 1px 6px 8px;
+    border-radius: 10px;
 }
 
 .modal-login-page_form label+label {
     margin-top: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .modal-login-page_form-login-btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-login-page_form-login-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-link {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.password-link:hover {
+    text-decoration: underline;
 }
 
 .background {
@@ -507,14 +532,9 @@
     padding: 7px 12px 8px 10px;
     color: #fff;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    background-color: rgba(4, 32, 110, 0.664);
     cursor: pointer;
-}
-
-.modal-login-page_form input {
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 3px 1px 2px 8px;
-    border-radius: 7px;
 }
 
 .modal-login-page_form p {
