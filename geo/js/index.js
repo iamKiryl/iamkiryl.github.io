@@ -123,10 +123,12 @@ const navLinks = (navSelector, link, imageLink, titleText) => {
     title.classList.add('nav-links_link-title');
     title.innerText = titleText;
 
-    selector.append(a);
-    a.append(wrapper);
-    a.append(title);
-    wrapper.append(img);
+    if (selector) {
+        selector.append(a);
+        a.append(wrapper);
+        a.append(title);
+        wrapper.append(img);
+    }
 }
 
 const newsItem = (newsSelector, newsLink, newsTitle, author, publication, newsImage) => {
@@ -158,46 +160,48 @@ const newsItem = (newsSelector, newsLink, newsTitle, author, publication, newsIm
 }
 
 const advertising = ( advertisingSelector, link, imageLink, title = 'advertising') => {
-    const selector = document.querySelector(advertisingSelector),
-          a = document.createElement('a'),
-          img = document.createElement('img');
+        const selector = document.querySelector(advertisingSelector),
+              a = document.createElement('a'),
+              img = document.createElement('img');
+    
+              a.classList.add('advertising-item');
+              a.href = link;
+              img.src = imageLink;
+              img.alt = title;
 
-          a.classList.add('advertising-item');
-          a.href = link;
-          img.src = imageLink;
-          img.alt = title;
-
-          selector.append(a);
-          a.append(img);
+              if(selector) {
+                  selector.append(a);
+                  a.append(img);
+              }
 }
 
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
-menuItems('.header-modal-menu','./avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
 
 
-navLinks('.navLinks', '#', './3686457.jpg', 'Анонсы новых статей');
-navLinks('.navLinks', '#', './3686457.jpg', 'Мироздание: теория и практика');
-navLinks('.navLinks', '#', './3686457.jpg', 'Практическая магия');
-navLinks('.navLinks', '#', './3686457.jpg', 'Авторский блог о кулинарии');
-navLinks('.navLinks', '#', './3686457.jpg', 'События, теории, конспирология');
-navLinks('.navLinks', '#', './3686457.jpg', 'Градозащита: теория и практика');
-navLinks('.navLinks', '#', './3686457.jpg', 'Теория, методики, лайфхаки');
-navLinks('.navLinks', '#', './3686457.jpg', 'Авторскийе блоги на любые темы');
-navLinks('.navLinks', '#', './3686457.jpg', 'Путешествия');
+navLinks('.navLinks', './blog.html', './img/3686457.jpg', 'Анонсы новых статей');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Мироздание: теория и практика');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Практическая магия');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторский блог о кулинарии');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'События, теории, конспирология');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Градозащита: теория и практика');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Теория, методики, лайфхаки');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторскийе блоги на любые темы');
+navLinks('.navLinks', '#', './img/3686457.jpg', 'Путешествия');
 
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
 
-advertising('.advertising', '#', './image6.jpg');
-advertising('.advertising', '#', './image6.jpg');
-advertising('.advertising', '#', './image6.jpg');
-advertising('.advertising', '#', './image6.jpg');
+advertising('.advertising', '#', './img/image6.jpg');
+advertising('.advertising', '#', './img/image6.jpg');
+advertising('.advertising', '#', './img/image6.jpg');
+advertising('.advertising', '#', './img/image6.jpg');

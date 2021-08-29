@@ -29,9 +29,16 @@
     align-items: center;
 }
 
-.header-link {
+.header-link-wrapper {
     width: 100%;
     max-width: 150px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: rgba(4, 32, 110, 0.664);
+    font-weight: 700;
+    font-size: 36px;
 }
 
 .header-search {
@@ -124,6 +131,10 @@
 
 .account-img-wrapper {
     pointer-events: none;
+}
+
+.account-img-wrapper img {
+    width: 100%;
 }
 
 .header-modal-menu {
@@ -549,6 +560,14 @@
 
 .login-btn:hover {
     font-weight: bold;
+}
+
+.blog {
+    width: 100%;
+}
+
+.blog h1 {
+    text-align: center;
 }
 
 @media screen and (max-width: 1180px) {
