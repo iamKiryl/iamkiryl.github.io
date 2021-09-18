@@ -175,33 +175,42 @@ const advertising = ( advertisingSelector, link, imageLink, title = 'advertising
               }
 }
 
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
-menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+try {
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+    menuItems('.header-modal-menu','./img/avatar.svg', 'Account');
+} catch {}
+
+try {
+    navLinks('.navLinks', './blog.html', './img/3686457.jpg', 'Анонсы новых статей');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Мироздание: теория и практика');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Практическая магия');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторский блог о кулинарии');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'События, теории, конспирология');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Градозащита: теория и практика');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Теория, методики, лайфхаки');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторскийе блоги на любые темы');
+    navLinks('.navLinks', '#', './img/3686457.jpg', 'Путешествия');
+} catch {}
 
 
-navLinks('.navLinks', './blog.html', './img/3686457.jpg', 'Анонсы новых статей');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Мироздание: теория и практика');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Практическая магия');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторский блог о кулинарии');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'События, теории, конспирология');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Градозащита: теория и практика');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Теория, методики, лайфхаки');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Авторскийе блоги на любые темы');
-navLinks('.navLinks', '#', './img/3686457.jpg', 'Путешествия');
+try {
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+    newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+} catch {}
 
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
-newsItem('.news-wrapper', '#', 'Najnowszy sondaż. Polacy o przyszłości parlamentu', 'Onet', '1 hour', './img/3686457.jpg');
+try {
+    advertising('.advertising', '#', './img/image6.jpg');
+    advertising('.advertising', '#', './img/image6.jpg');
+    advertising('.advertising', '#', './img/image6.jpg');
+    advertising('.advertising', '#', './img/image6.jpg');
+} catch {}
 
-advertising('.advertising', '#', './img/image6.jpg');
-advertising('.advertising', '#', './img/image6.jpg');
-advertising('.advertising', '#', './img/image6.jpg');
-advertising('.advertising', '#', './img/image6.jpg');
