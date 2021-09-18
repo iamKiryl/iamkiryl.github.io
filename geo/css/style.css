@@ -216,7 +216,7 @@
     top: 65px;
     right: 10px;
     position: absolute;
-    width: 300px;
+    width: 230px;
     height: 230px;
     overflow: hidden;
     overflow-y: scroll;
@@ -569,6 +569,30 @@
 
 .blog h1 {
     text-align: center;
+}
+
+.blog-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-item {
+    max-width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    border: 1px solid grey;
+}
+
+.blog-item__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1180px) {
