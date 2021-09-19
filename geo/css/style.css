@@ -651,6 +651,19 @@
     border-radius: 10px;
 }
 
+.lock-wrapper {
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    right: 12px;
+    top: 10px;
+}
+
+.lock-wrapper path{
+    color: rgba(230, 28, 28, 0.87);
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 1180px) {
     .news {
         max-width: 520px;
